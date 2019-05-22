@@ -23,7 +23,7 @@ ShoppingcartDAO shoppingcartDAO;
 
 
 @PostMapping("/items")
-public ShoppingCart createEmployee(@Valid @RequestBody ShoppingCart itm) {
+public ShoppingCart createShoppingCart(@Valid @RequestBody ShoppingCart itm) {
 return shoppingcartDAO.save(itm);
 }
 
